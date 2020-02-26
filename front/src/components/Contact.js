@@ -45,7 +45,7 @@ class Contact extends React.Component {
                           </lable>
 
                           <lable>
-                            <textarea placeholder="Tapez votre message ici.... " tabindex="7" required />
+                            <textarea id ="textarea" placeholder="Tapez votre message ici.... "  required />
                           </lable>
 
                           <lable><br />
