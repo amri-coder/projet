@@ -10,7 +10,7 @@ module.exports = {
       },
       image:{
         allowNull: false,
-        type: Sequelize.STRING(150)
+        type: Sequelize.STRING
       },
       type: {
         allowNull: false,
