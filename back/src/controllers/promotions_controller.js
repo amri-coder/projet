@@ -1,7 +1,7 @@
 const pick = require("lodash/pick");
 
 const { Promotion } = require("../models");
-const { recupererUneFormation } = require("./formations_controller");
+const { recupererUneFormation } = require("./etudiants_controller");
 
 const promotionsController = {
   recupererLesPromotions: async () => {
