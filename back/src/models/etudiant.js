@@ -1,6 +1,6 @@
 module.exports = (sequelize, DataTypes) => {
-  const Apprenant = sequelize.define(
-    "Apprenant",
+  const Etudiant = sequelize.define(
+    "Etudiant",
     {
       id: {
         allowNull: false,
@@ -49,11 +49,6 @@ module.exports = (sequelize, DataTypes) => {
           len: [6, 50]
         }
       },
-      promotionId: {
-        field: "promotion_id",
-        allowNull: false,
-        type: DataTypes.UUID
-      },
       createdAt: {
         field: "created_at",
         allowNull: false,
@@ -76,19 +71,13 @@ module.exports = (sequelize, DataTypes) => {
       }
     },
     {
-      tableName: "apprenants"
+      tableName: "etudiants"
     }
   );
 
-  Apprenant.associate = models => {
-    Apprenant.belongsTo(models.Promotion, {
-      onDelete: "CASCADE",
-      foreignKey: {
-        name: "promotionId",
-        allowNull: false
-      }
-    });
+  Etudiant.associate = models => {
+
   };
 
-  return Apprenant;
+  return Etudiant;
 };

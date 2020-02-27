@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable("etudiants", {
+    return queryInterface.createTable("etudiant", {
       id: {
         allowNull: false,
         primaryKey: true,
@@ -24,15 +24,6 @@ module.exports = {
       },
       email: {
         type: Sequelize.STRING(50)
-      },
-      id_etudiant: {
-        allowNull: false,
-        type: Sequelize.UUID,
-        onDelete: "CASCADE",
-        references: {
-          model: "promotions",
-          key: "id"
-        }
       },
       created_at: {
         allowNull: false,

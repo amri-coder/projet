@@ -8,9 +8,13 @@ module.exports = {
         type: Sequelize.UUID,
         defaultValue: Sequelize.UUIDV4
       },
+      image:{
+        allowNull: false,
+        type: Sequelize.STRING(150)
+      },
       type: {
         allowNull: false,
-        type: Sequelize.JSONB
+        type: Sequelize.STRING,
       },
       superficie: {
         allowNull: false,
@@ -19,7 +23,7 @@ module.exports = {
       },
       adresse: {
         allowNull: false,
-        type: Sequelize.JSONB
+        type: Sequelize.STRING
       },
       etage: {
         allowNull: false,
@@ -27,7 +31,7 @@ module.exports = {
       },
       prix: {
         allowNull: false,
-        type: Sequelize.JSONB
+        type: Sequelize.DECIMAL
       },
       created_at: {
         allowNull: false,
