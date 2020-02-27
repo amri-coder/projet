@@ -1,10 +1,17 @@
-const { etudiant } = require("../models");
+const { Etudiant } = require("../models");
 
 const etudiantController = {
   recupererLesEtudiant: async () => {
     const etudiants = await Etudiant.findAll({
       order: [["nom", "ASC"]],
-      attributes: ["id", "prenom", "nom", "dateNaissance", "telephone", "email"],
+      attributes: [
+        "id",
+        "prenom",
+        "nom",
+        "dateNaissance",
+        "telephone",
+        "email"
+      ],
       raw: true
     });
 

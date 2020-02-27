@@ -75,9 +75,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   );
 
-  Etudiant.associate = models => {
-
-  };
+  Etudiant.associate = () => {};
 
   return Etudiant;
 };

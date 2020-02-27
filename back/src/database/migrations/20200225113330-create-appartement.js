@@ -8,13 +8,13 @@ module.exports = {
         type: Sequelize.UUID,
         defaultValue: Sequelize.UUIDV4
       },
-      image:{
+      image: {
         allowNull: false,
         type: Sequelize.STRING
       },
       type: {
         allowNull: false,
-        type: Sequelize.STRING,
+        type: Sequelize.STRING
       },
       superficie: {
         allowNull: false,
