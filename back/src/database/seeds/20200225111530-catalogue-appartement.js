@@ -8,7 +8,7 @@ const now = moment()
 module.exports = [
   {
     id: uuid(),
-    image: '../assets/appart1.jpg',
+    image: "../assets/appart1.jpg",
     type: "F1",
     superficie: 32,
     adresse : "Place 8 mai 1945, 93200 SAINT DENIS",
@@ -19,7 +19,7 @@ module.exports = [
   },
   {
     id: uuid(),
-    image: '../assets/appart2.jpg',
+    image: "../assets/appart2.jpg",
     type: "Studio",
     superficie: 9,
     adresse : "3 Avenue de la republique, Paris 75001",
